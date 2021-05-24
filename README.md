@@ -22,15 +22,12 @@ poetry install
 
 ### SLiCE parameters
 ```python
-    parser = ArgumentParser(description="Input parameters for SLiCE")
-    parser.add_argument("--precision", type=float, default=0.80, required=False, dest="precision")
-    parser.add_argument("--recall", type=float, default=0.85, required=False, dest="recall")
-    parser.add_argument(
-        "--frequency", type=float, default=0.3, required=False, dest="frequency"
-        )
-    parser.add_argument("--alpha", type=float, default=0.05, required=False, dest="alpha")
-    parser.add_argument("--interval-width", type=float, default=0.05, required=False, dest="interval_width")
-    parser.add_argument("--int_freq", type=bool, default=True, required=False, dest="int_freq")
+--precision: type=float, default=0.80, required=False
+--recall: type=float, default=0.85, required=False
+--frequency: type=float, default=0.3, required=False
+--alpha: type=float, default=0.05, required=False
+--interval-width: type=float, default=0.05, required=False
+--int_freq: type=bool, default=True, required=False
 ```
 ### How to use SLiCE? ###
 ### LINUX
