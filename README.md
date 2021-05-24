@@ -1,12 +1,12 @@
-#SLiCE (Savana's SampLe size Calculator for Evaluations)
+## SLiCE (Savana's SampLe size Calculator for Evaluations)
 
 ### What is SLiCE for?
 SLiCE enables users to estimate the minimum sample size required to obtain robust metrics of performance where robustness is determined by pre-defining confidence intervals (CI) widths and levels. The method has been designed assuming that the metrics to perform the evaluation are the standard metrics for IE in evaluations in NLP, namely: Precision (P), Recall (R) and F1-score.
 
-###Installation of SLiCE (working for LINUX and WINDOWS)
+### Installation of SLiCE (working for LINUX and WINDOWS)
 
 1. Open your favorite python IDE (e.g. PyCharm)
-2. Clone the SLiCE library executing one of the below commands in the terminal
+2. Clone the SLiCE library by executing the below command in the terminal
 ```bash
 # https
 git clone https://github.com/Savanamed/slice.git     
@@ -20,7 +20,8 @@ cd /your/path/to/slice
 poetry install
 ```
 
-###SLiCE parameters
+### SLiCE parameters
+```python
     parser = ArgumentParser(description="Input parameters for SLiCE")
     parser.add_argument("--precision", type=float, default=0.80, required=False, dest="precision")
     parser.add_argument("--recall", type=float, default=0.85, required=False, dest="recall")
@@ -30,7 +31,7 @@ poetry install
     parser.add_argument("--alpha", type=float, default=0.05, required=False, dest="alpha")
     parser.add_argument("--interval-width", type=float, default=0.05, required=False, dest="interval_width")
     parser.add_argument("--int_freq", type=bool, default=True, required=False, dest="int_freq")
-
+```
 ### How to use SLiCE? ###
 ### LINUX
 
