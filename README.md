@@ -30,7 +30,6 @@ poetry install
 --int_freq: type=bool, default=True, required=False
 ```
 ### How to use SLiCE? ###
-### LINUX
 
 ```python
 # default parameters
