@@ -15,8 +15,7 @@ git clone https://github.com/Savanamed/slice.git
 4. Activate venv
 4. Install the library
 ```bash
-# change directory to /slice
-cd /your/path/to/slice
+# change directory to project folder (containing pyproject.toml)
 poetry install
 ```
 
@@ -27,17 +26,16 @@ poetry install
 --frequency: type=float, default=0.3, required=False
 --alpha: type=float, default=0.05, required=False
 --interval-width: type=float, default=0.05, required=False
---int_freq: type=bool, default=True, required=False
+--int_freq: type=str, default="True", required=False
 ```
 ### How to use SLiCE? ###
 
 ```python
 # default parameters
-cd /slice/scr/slice
-python slice.py 
+# from the project directory do...
+python scr/slice/slice.py 
 # with custom parameters
-cd /slice/scr/slice
-python slice.py  --precision 0.95 --recall 0.7 --frequency-rate 0.6 --alpha 0.05  --interval-width 0.05 --int_freq "True"
+python scr/slice/slice.py  --precision 0.95 --recall 0.7 --frequency-rate 0.6 --alpha 0.05  --interval-width 0.05 --int_freq "True"
 ```
 
 ### SLiCE output
