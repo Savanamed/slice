@@ -27,7 +27,7 @@ poetry install
 --frequency: type=float, default=0.3, required=False
 --alpha: type=float, default=0.05, required=False
 --interval-width: type=float, default=0.05, required=False
---int_freq: type=bool, default=True, required=False
+--int_freq: type=str, default="True", required=False
 ```
 ### How to use SLiCE? ###
 
