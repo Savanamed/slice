@@ -85,7 +85,7 @@ def slice_calculation(precision, recall, frequency, interval_width, alpha, int_f
 
     tn_recall_internal = max(0, val_tn_recall_internal)
 
-    if int_freq:
+    if int_freq == "True":
         tn_precision = tn_precision_internal
         tn_recall = tn_recall_internal
     else:
@@ -125,14 +125,14 @@ if __name__ == "__main__":
     parser.add_argument("--precision", type=float, default=0.80, required=False, dest="precision")
     parser.add_argument("--recall", type=float, default=0.85, required=False, dest="recall")
     parser.add_argument(
-        "--frequency", type=float, default=0.3, required=False, dest="frequency"
+        "--frequency", type=float, default=0.30, required=False, dest="frequency"
         )
     parser.add_argument("--alpha", type=float, default=0.05, required=False, dest="alpha")
     parser.add_argument("--interval-width", type=float, default=0.05, required=False, dest="interval_width")
-    parser.add_argument("--int_freq", type=bool, default=True, required=False, dest="int_freq")
+    parser.add_argument("--int_freq", type=str, default="True", required=True, dest="int_freq")
 
     args = parser.parse_args()
-
+    print(args)
     argument_headers = [
         "--precision",
         "--recall",

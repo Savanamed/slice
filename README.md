@@ -37,7 +37,7 @@ cd /slice/scr/slice
 python slice.py 
 # with custom parameters
 cd /slice/scr/slice
-python slice.py  --precision 0.95 --recall 0.7 --frequency-rate 0.6 --alpha 0.05  --interval-width 0.05 --int_freq True
+python slice.py  --precision 0.95 --recall 0.7 --frequency-rate 0.6 --alpha 0.05  --interval-width 0.05 --int_freq "True"
 ```
 
 ### SLiCE output
