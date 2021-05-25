@@ -129,7 +129,7 @@ if __name__ == "__main__":
         )
     parser.add_argument("--alpha", type=float, default=0.05, required=False, dest="alpha")
     parser.add_argument("--interval-width", type=float, default=0.05, required=False, dest="interval_width")
-    parser.add_argument("--int_freq", type=str, default="True", required=True, dest="int_freq")
+    parser.add_argument("--int_freq", type=str, default="True", required=False, dest="int_freq")
 
     args = parser.parse_args()
     print(args)
