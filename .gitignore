@@ -53,3 +53,7 @@ Thumbs.db
 
 # egg-info
 *.egg*
+
+#pytest
+.coverage
+.pytest_cache
